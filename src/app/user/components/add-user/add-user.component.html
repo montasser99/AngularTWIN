@@ -1,6 +1,9 @@
 <form #form="ngForm">
+    <!-- #firstname = "ngModel"=> le contenu de user.firtname dans #firstname -->
     FirstName:<input (keyup)="f(firstname.errors)" name="firstname" pattern="[a-zA-Z]*" minlength="10" required type="text"  
+    
     [(ngModel)]="user.firstName" #firstname="ngModel"><br>
+    
     <div *ngIf="firstname.touched && firstname.invalid">
         <div *ngIf="firstname.errors['required']">
             Firstaname obligatoire

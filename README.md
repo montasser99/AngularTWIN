@@ -57,6 +57,40 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## DataBinding (Oneway and twoWay)
 Data binding is one of the most powerful features of Angular, which allows you to create dynamic applications by connecting HTML elements directly to JavaScript variables.
 
-<img src="./databinding.jpg" alt="Databinding" width="600" height="500">
+<img src="images/databinding.jpg" alt="Databinding" width="600" height="500">
+
+## Here is a table that summarizes the key differences between template-driven forms and reactive forms:
+<img src="images/drivenVSreactive.jpg" alt="Databinding" width="600" height="500">
+
+1. template driven Form : 
+=> ngModel/ngForm(FormsModule)
+=> validateurs a définir dans l'html (required,minlength...)
+=> message d'erreur des HTML 
+
+## controle de saisie
+- **cote client :** 
+- Validation des entrées par le navigateur avant envoi du formulaire au serveur.
+- Affichage d'erreurs directement sur les champs.
+- Utilisation de la directive [required] pour valider un champ obligatoire.
+- Utilisation de la directive [minLength], [maxLength] ou [pattern] pour définir des conditions de validation plus complexes.
+- Utilisation de la directive [minLength], [maxLength] ou [pattern] pour valider une longueur minimale, maximale ou
+- Utilisation de la directive [(ngModel)] pour lier une valeur à un champ HTML(surveille l'eat de element html associé et utiliser two way databinding)
+=> valid/invalid/errors(Validateurs) , dirty/pristine/touched/intouched(action de l'utilisation)
+Exemple :
+<img src="images/CoteClient.jpg" alt="Databinding" width="600" height="500">
+
+
+- **côté serveur :**
+- La validation est faite après l’envoi du formulaire, ce qui peut entraîner une perte de temps et une charge supplémentaire.
+- Les erreurs sont renvoyées dans le corps de la réponse JSON ou XML.
+- Le formatage des dates est effectué côté serveur.
+- L’utilisateur ne peut pas modifier les données qu’il n’a pas accès.
+- La validation est faite par l’application serveur, qui utilise des bibliothèques tierces telles que Hibernate Validator
+- La validation est faite avant l’insertion des données dans la base de données.
+
+
+
+
+
 
 
