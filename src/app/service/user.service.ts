@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { count,Observable } from 'rxjs';
 import { User } from '../models/user';
+import { UserModule } from '../user/user.module';
 
 @Injectable({
   providedIn: 'root'

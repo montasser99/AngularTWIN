@@ -5,8 +5,8 @@ import { UserRoutingModule } from './user-routing.module';
 import { UsersComponent } from './components/users/users.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { FormsModule } from '@angular/forms';
-import { UserService } from '../service/user.service';
-import { AdddUserComponent } from './components/addd-user/addd-user.component';
+import { UserService } from '../service/user.service';;
+import { AddUserComponent } from './components/add-user/add-user.component';
 
 
 
@@ -14,7 +14,7 @@ import { AdddUserComponent } from './components/addd-user/addd-user.component';
   declarations: [
     UsersComponent,
     UserListComponent,
-    AdddUserComponent
+    AddUserComponent
   ],
   
   imports: [

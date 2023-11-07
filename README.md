@@ -56,7 +56,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## DataBinding (Oneway and twoWay)
 Data binding is one of the most powerful features of Angular, which allows you to create dynamic applications by connecting HTML elements directly to JavaScript variables.
-![Databinding](C:\Users\pc\Desktop\angulartwin1-main\databinding.jpg)
 
+<img src="./databinding.jpg" alt="Databinding" width="600" height="500">
 
 
